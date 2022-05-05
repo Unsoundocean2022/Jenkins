@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+<body>
+    <header>
+      <div class="content">
+        <h1>Hot Beans Web</h1>
+        <a href="#">Start Now</a>
+      </div>
+      <nav>
+        <div class="logo">
+          <a href="index.html"><img src="HotBeansWebsLogo.png" alt="Logo" width="50px" height="50px"></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+      <div class="container">
+          <h2>Join Our Newsletter</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          <div class="email-box">
+            <i class="fas fa-envelope"></i>
+            <input class="tbox" type="email" name="email" placeholder="Enter your E-mail">
+            <input class="btn" type="submit" name="Subscribe" value="Subscribe">
+          </div>
+      </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".menu-icon").on("click", function(){
+          $("nav ul").toggleClass("showing");
+        });
+      });
+      $(window).on("scroll", function(){
+        if($(window).scrollTop()) {
+          $('nav').addClass('black');
+        }
+        else{
+          $('nav').removeClass('black');
+        }
+      })
+    </script>
+  <footer>
+    <p>Powered by <a href="#" title="Hot Beans Web" target="_blank" class="color">Hot Beans Web</a></p>
+    <div class="social-buttons">
+      <a href="https://en-gb.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/?lang=en-gb" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.snapchat.com/l/en-gb/" target="_blank"><i class="fab fa-snapchat"></i></a>
+      <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
